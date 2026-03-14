@@ -2,56 +2,25 @@
 <html>
     <head>
         <title>The API Times</title>
-        <script>
-        function updateTime() {
-                const date = new Date();
-                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                const day = date.toLocaleDateString(undefined, options);
-                document.getElementById('time').innerHTML =
-                    `${day}`;
-            }
-
-            setInterval(updateTime, 1000);
-            updateTime();
-        </script>
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
     <nav>
-        <a href="#items-today">Items Today</a>
+        <h4>Navigation</h4>
+        <a href="#items-today">idk some special category that will be at the bottom of the articles</a>
         <hr>
         <a href="#article-1">LuxuryRangeRover Under Fire for Racist Comments</a>
-    </nav>
-    <div class="main-content">
-        <div class="top">
-            <h1>The Api Times</h1>
-            <h2>API-Lounge's Finest News Source</h2>
-            <hr class="thick">
-            <p id="time">Fetching Date...</p>
-        </div>
-
-        <h3 id="article-1">LuxuryRangeRover Under Fire for Racist Comments</h3>
-        <img class="attached" src="luxuryrangerover-dropped.png">
-        <div class="author">
-            <img src="glorprora.png" alt="Glorprora Author photo">
-            <div>
-                <div><strong>By:</strong> Glorprora</div>
-                <div>Lead Reporter</div>
-            </div>
-        </div>
-        <div class="article-box">
-            <span class="article-info">API LOUNGE, ROLI., March 13th —</span>
-            <span class="article-text">Recently, LuxuryRangeRover has been under large controversy for various racist comments found to be made from him between the dates of June 2025 and Feburary 2026.
-                <br><br>This controversy has followed after numerous lackluster consequences for these racist comments made by LuxuryRangeRover. At most, the punishments issued were 1 hour automatic filter mutes, and this has enraged protestors, who recently protested these comments in the DMs of every Rolimon's moderator.
-            </span>
-            <p><a href="illdothislater.html">Read More</a></p>
-        </div>
-        <hr class="thick" id="article-to-stocks">
-        <h5 id="items-today">Items Today</h5>
+        <div class="bottom-of-sidebar">
+        <hr class="thick">
+        <h5 id="items-today">Item Performance Today</h5>
         <div class="stocks">
-            <img src="up.png" alt="Down" class="item-icon">
+            <img src="up.png" alt="Up" class="item-icon">
             <div>Dr. Ishmael</div>
+        </div>
+        <div class="stocks">
+            <img src="same.png" alt="Same" class="item-icon">
+            <div>Rainbow Omega Periastron</div>
         </div>
         <div class="stocks">
             <img src="down.png" alt="Down" class="item-icon">
@@ -65,7 +34,36 @@
             <img src="down.png" alt="Down" class="item-icon">
             <div>Super Super Happy Face</div>
         </div>
+    </div>
+    </nav>
+    <div class="main-content">
+        <div class="top">
+            <h1>The Api Times</h1>
+            <h2>API-Lounge's Finest News Source</h2>
+            <hr class="thick">
+        </div>
+
+
+        <h3 id="article-1">LuxuryRangeRover Under Fire for Racist Comments</h3>
+        <p class="date">March 14th, 2025</p>
+        <img class="attached" src="luxuryrangerover-dropped.png">
+        <div class="author">
+            <img src="glorprora.png" alt="Glorprora Author photo">
+            <div>
+                <div><strong>By:</strong> Glorprora</div>
+                <div>Lead Reporter</div>
+            </div>
+        </div>
+        <div class="article-text">
+            <span class="article-info">API LOUNGE, ROLI. —</span>
+            <span class="article-text">Recently, LuxuryRangeRover has been under large controversy for various racist comments found to be made from him between the dates of June 2025 and Feburary 2026.
+                <br><br>This controversy has followed after numerous lackluster consequences for these racist comments made by LuxuryRangeRover. At most, the punishments issued were 1 hour automatic filter mutes, and this has enraged protestors, who recently protested these comments in the DMs of every Rolimon's moderator.
+            </span>
+            <p><a href="illdothislater.html">Read More</a></p>
+        </div>
+
         <hr class="thick">
+
         <footer>
             <p>Powered by the stolen soul fragments of LuxuryRangeRover.</p>
             <p>© 2026 Glorprora Media Corporation Ltd. </p>
