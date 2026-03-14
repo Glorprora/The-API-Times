@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The API Times</title>
+        <script>
+        function updateTime() {
+                const date = new Date();
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                const day = date.toLocaleDateString(undefined, options);
+                document.getElementById('time').innerHTML =
+                    `${day}`;
+            }
+
+            setInterval(updateTime, 1000);
+            updateTime();
+        </script>
+    <style>
+        @font-face {
+            font-family: 'custom-font';
+            src: url(/the-new-york-times-font/Chomsky.otf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        h1 {
+            font-family: 'custom-font';
+        }
+
+         body {
+            background:rgb(226, 226, 226);
+         }
+
+        hr {
+            border-top: 3px solid black;
+        }
+
+        .author {
+            display: inline;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+        .top {
+            text-align: center;
+            margin-bottom: 2.5em;
+        }
+
+        .article-box {
+            font-family:'Courier New', Courier, monospace
+        }
+
+        .article-info {
+            white-space: nowrap;
+            margin-right: 0.25em;
+            display: inline;
+            font-weight: bold;
+        }
+
+        .attached {
+            width: 80%;
+            margin-right: 20%;
+        }
+
+        h3 { 
+            font-size: 1.6em;
+            font-family: "Georgia";
+        }
+
+        h2 {
+            font-size: 0.8em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            color: rgb(88, 88, 88);
+            line-height: 5px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            line-height: 0px;
+        }
+
+        #time {
+            font-family: "Georgia";
+            font-size: 1.15em;
+            line-height: 0em;
+        }
+
+        #article-to-stocks {
+            margin-top: 3em;
+        }
+
+        h5 {
+            font-size: 1.5em;
+            line-height: 0px;
+            margin-top: 0.7em;
+            margin-bottom: 0.7em;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+        <h1>The Api Times</h1>
+        <h2>API-Lounge's Finest News Source</h2>
+        <hr>
+        <p id="time"></p>
+        </div>
+        <p></p>
+        <h3>LuxuryRangeRover Under Fire for Racist Comments</h3>
+        <img class="attached" src="/luxuryrangerover-dropped.png">
+    <div class="author" style="display: flex; align-items: center;">
+        <img src="glorprora.png" alt="Glorprora Author photo" style="width: 2.5em; height: 2.5em; border-radius: 50%; margin-right: 10px;">
+        <div>
+            <div><strong>By:</strong> Glorprora</div>
+            <div>Lead Reporter</div>
+        </div>
+    </div>
+        <div class="article-box">
+            <span class="article-info">API LOUNGE, ROLI., March 13th —</span>
+            <span class="article-text">Recently, LuxuryRangeRover has been under large controversy for various racist comments found to be made from him between the dates of June 2025 and Feburary 2026.
+                <br><br>This controversy has followed after numerous lackluster consequences following these racist comments made by LuxuryRangeRover. At most, the punishment issued was 1 hour Automatic Discord Filter mutes, and this has enraged protestors, who recently protested these comments in the DMs of every Rolimon's moderator.
+            </span>
+        </div>
+        <hr id="article-to-stocks">
+        <h5>Items Today</h5>
+        <div class="stocks" style="display:flex; align-items: center;">
+            <img src="up.png" alt="Down" style="width: 3%; height: 3%; margin-right: 10px;">
+            <div>Dr. Ishmael</div>
+        </div>
+        <div class="stocks" style="display:flex; align-items: center;">
+            <img src="down.png" alt="Down" style="width: 3%; height: 3%; margin-right: 10px;">
+            <div>Valkyrie Helm</div>
+        </div>
+        <div class="stocks" style="display:flex; align-items: center;">
+            <img src="down.png" alt="Down" style="width: 3%; height: 3%; margin-right: 10px;">
+            <div>Playful Vampire</div>
+        </div>
+        <div class="stocks" style="display:flex; align-items: center;">
+            <img src="down.png" alt="Down" style="width: 3%; height: 3%; margin-right: 10px;">
+            <div>Super Super Happy Face</div>
+        </div>
+        <hr>
+    </body>
+</html>
