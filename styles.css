@@ -14,7 +14,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 12%;
+            width: 16%;
             height: 100vh;
             border-right: 3px solid black;
             box-sizing: border-box;
@@ -24,8 +24,8 @@
         }
 
         .main-content {
-            margin-left: 12%;
-            padding: 1em;
+            margin-left: 16%;
+            padding: 2.5em;
             padding-top: 0.5em;
             box-sizing: border-box;
         }
@@ -54,12 +54,13 @@
             margin-top: 0;
             margin-bottom: 0;
             font-size: 4.25em;
-            text-align: center;
         }
 
         .thick {
             border-top: 3px solid black;
         }
+
+
 
         .author {
             display: flex;
@@ -68,22 +69,20 @@
             margin: 1em 0;
         }
         .author img {
+            margin-left: 3em;
             width: 2.5em;
             height: 2.5em;
             border-radius: 50%;
             margin-right: 10px;
         }
 
+        article {
+            padding: 0 10em;
+        }
         .article-text {
             font-family:'Courier New', Courier, monospace;
             margin-bottom: 3em;
-        }
-
-        .article-info {
-            white-space: nowrap;
-            margin-right: 0.25em;
-            display: inline;
-            font-weight: bold;
+            padding: 0 3em;
         }
 
         .attached {
@@ -99,7 +98,6 @@
             font-size: 2em;
             margin-top: 0.1em;
             font-family: "Georgia";
-            text-align: center;
             margin-bottom: 0.4em;
         }
 
@@ -108,30 +106,52 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-style: italic;
             margin-top: 0.2em;
-            text-align: center;
         }
 
         .date {
             font-family: "Georgia";
-            font-size: 1.15em;
             line-height: 0;
-            text-align: center;
             margin-top: 0;
             margin-bottom: 1.2em;
         }
 
         h5 {
             font-size: 1.3em;
-            line-height: 1em;
             margin: 0.2em 0;
         }
 
         footer {
             color: rgb(88, 88, 88);
-            text-align: center;
         }
 
         h4 {
             margin: 0;
             font-size: 1.6em;
         }
+
+        .tbc {
+            color: rgb(12, 129, 165);
+            text-decoration: underline;
+        }
+
+
+
+        .article-text::before {
+            white-space: nowrap;
+            margin-right: 0.7em;
+            display: inline;
+            font-weight: bold;
+        }
+
+/* article specific stuff below here */
+
+        #art1-text::before {
+            content: "API LOUNGE, ROLI. —"
+        }
+
+
+/* generic labels below here */
+
+.center {
+    text-align: center;
+}
