@@ -6,8 +6,9 @@
         }
 
          body {
-            background:rgb(211, 211, 211);
+            font-size: 1em;
             margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
          }
 
         nav {
@@ -43,7 +44,7 @@
 
         .item-icon {
             width: 2em;
-            height: 3%;
+            height: 1.4em;
             margin-right: 1em;
         }
 
@@ -51,8 +52,7 @@
 
         h1 {
             font-family: 'custom-font';
-            margin-top: 0;
-            margin-bottom: 0;
+            margin: 0 0 -0.15em 0;
             font-size: 4.25em;
         }
 
@@ -60,20 +60,16 @@
             border-top: 3px solid black;
         }
 
-
-
         .author {
             display: flex;
             align-items: center;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             margin: 1em 0;
         }
         .author img {
-            margin-left: 3em;
+            margin: 0 10px 0 3em;
             width: 2.5em;
             height: 2.5em;
             border-radius: 50%;
-            margin-right: 10px;
         }
 
         article {
@@ -97,22 +93,13 @@
         h3 { 
             font-size: 2em;
             margin-top: 0.1em;
-            font-family: "Georgia";
-            margin-bottom: 0.4em;
+            font-style: italic;
+            margin-bottom: -0.4em;
         }
 
         h2 {
             font-size: 1em;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-style: italic;
-            margin-top: 0.2em;
-        }
-
-        .date {
-            font-family: "Georgia";
-            line-height: 0;
-            margin-top: 0;
-            margin-bottom: 1.2em;
         }
 
         h5 {
@@ -125,7 +112,7 @@
         }
 
         h4 {
-            margin: 0;
+            margin: 0 0 0 0;
             font-size: 1.6em;
         }
 
@@ -133,8 +120,6 @@
             color: rgb(12, 129, 165);
             text-decoration: underline;
         }
-
-
 
         .article-text::before {
             white-space: nowrap;
