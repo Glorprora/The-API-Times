@@ -7,7 +7,7 @@
         }
 
          body {
-            background:rgb(226, 226, 226);
+            background:rgb(211, 211, 211);
             margin: 0;
          }
 
@@ -24,7 +24,8 @@
 
         .main-content {
             margin-left: 12%;
-            padding: 1.5em;
+            padding: 1em;
+            padding-top: 0.5em;
             box-sizing: border-box;
         }
 
@@ -32,6 +33,9 @@
 
         h1 {
             font-family: 'custom-font';
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 4.25em;
         }
 
 
@@ -46,7 +50,6 @@
 
         .top {
             text-align: center;
-            margin-bottom: 2.5em;
         }
 
         .article-box {
@@ -66,27 +69,26 @@
         }
 
         h3 { 
-            font-size: 1.6em;
+            font-size: 2em;
+            margin-top: 0.1em;
             font-family: "Georgia";
         }
 
         h2 {
-            font-size: 0.8em;
+            font-size: 1em;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-style: italic;
-            color: rgb(88, 88, 88);
-            line-height: 5px;
+            margin-top: 0.2em;
         }
 
-        h1 {
-            font-size: 3.5em;
-            line-height: 0px;
-        }
+
+
+
 
         #time {
             font-family: "Georgia";
             font-size: 1.15em;
-            line-height: 0em;
+            line-height: 0;
         }
 
         #article-to-stocks {
