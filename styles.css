@@ -133,6 +133,9 @@
         #art1-text::before {
             content: "API LOUNGE, ROLI. —"
         }
+        #art2-text::before {
+            content: "API LOUNGE, ROLI. —"
+        }
 
 
 /* generic labels below here */
