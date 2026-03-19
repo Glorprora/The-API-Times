@@ -127,6 +127,11 @@
             font-weight: bold;
         }
 
+        .article-img, object {
+            display: block;
+            margin: auto auto;
+        }
+
 /* article specific stuff below here */
 
         #art1-text::before {
@@ -134,6 +139,9 @@
         }
         #art2-text::before {
             content: "API LOUNGE, ROLI. —"
+        }
+        #art0-text::before {
+            content: ".GG/ZEB, DISCORD. —"
         }
 
 
